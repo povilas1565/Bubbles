@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Bubbles;
-
-public class ScoreManager : IDisposable
+namespace Bubbles 
+{
+    public class ScoreManager : IDisposable
 {
     private float _score;
     private readonly DifficultSettings _difficultSettings;

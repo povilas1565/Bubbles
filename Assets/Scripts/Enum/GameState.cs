@@ -1,9 +1,10 @@
-﻿namespace Bubbles;
-public enum GameState
+﻿namespace Bubbles
 {
-    None,
-    Countdown,
-    Started,
-    Ended
-    
+    public enum GameState
+    {
+        None,
+        Countdown,
+        Started,
+        Ended
+    }
 }

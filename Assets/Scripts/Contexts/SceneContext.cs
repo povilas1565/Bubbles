@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-namespace Bubbles;
+namespace Bubbles 
+{
 public sealed class SceneContext : Singleton<SceneContext>
 {
     [SerializeField] private DifficultSettings _difficultSettings;

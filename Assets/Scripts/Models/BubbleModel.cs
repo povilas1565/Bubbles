@@ -1,5 +1,6 @@
 ﻿
-namespace Bubbles;
+namespace Bubbles 
+{
 public sealed class BubbleModel
 {
     private bool _active;

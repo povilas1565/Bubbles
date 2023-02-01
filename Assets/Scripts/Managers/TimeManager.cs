@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Bubbles;
-
-public sealed class TimeManager
+namespace Bubbles 
+{
+    public sealed class TimeManager
 {
     private bool _isStarted;
     private float _timer;

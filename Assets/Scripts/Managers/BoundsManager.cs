@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Bubbles;
-
-public sealed class BoundsManager : IDisposable
+namespace Bubbles 
+{
+    public sealed class BoundsManager : IDisposable
 {
     private Camera _camera;
     private readonly DifficultSettings _difficultSettings;

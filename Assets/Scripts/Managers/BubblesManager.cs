@@ -2,9 +2,9 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Bubbles;
-
-public sealed class BubblesManager : ITickable, IDisposable
+namespace Bubbles 
+{
+    public sealed class BubblesManager : ITickable, IDisposable
 {
     private readonly ObjectPool<BubbleController> _bubblesPool;
         private readonly TimeManager _timeManager;

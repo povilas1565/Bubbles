@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Bubbles;
-
-public sealed class UpdateManager : IDisposable
+namespace Bubbles 
+{
+    public sealed class UpdateManager : IDisposable
 {
     private readonly UpdateManagerComponent _component;
 
