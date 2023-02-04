@@ -2,7 +2,7 @@
 {
     public interface IPoolable
     {
-        bool ISEnabled { get; set; }
+        bool IsEnabled { get; set; }
         void Initialize();
         void Enable();
         void Disable();

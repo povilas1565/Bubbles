@@ -2,19 +2,22 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Bubbles 
+namespace Bubbles
 {
     public sealed class BubblesManager : ITickable, IDisposable
-{
-    private readonly ObjectPool<BubbleController> _bubblesPool;
+    {
+        private readonly ObjectPool<BubbleController> _bubblesPool;
         private readonly TimeManager _timeManager;
         private readonly UpdateManager _updateManager;
         private readonly BoundsManager _boundsManager;
         private readonly DifficultSettings _difficultSettings;
         private float _speedFactor;
         private float _passedAfterSpawn;
+
         public delegate void BubbleHitHandler(float radius);
+
         public event BubbleHitHandler BubbleHit;
+
         public float SpeedFactor => _speedFactor;
 
         public BubblesManager()
@@ -85,5 +88,3 @@ namespace Bubbles
         }
     }
 }
-
-    

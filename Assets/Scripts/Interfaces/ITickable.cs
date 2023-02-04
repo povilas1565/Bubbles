@@ -1,4 +1,4 @@
-﻿namespace Bubbles 
+﻿namespace Bubbles
 {
     public interface ITickable
     {

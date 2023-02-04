@@ -8,8 +8,8 @@ namespace Bubbles
         [SerializeField] private float countdown;
         [SerializeField] private float duration;
 
-        public float Countdown => countdown;
-        public float Duration => duration;
+        public float Сountdown => countdown;
 
+        public float Duration => duration;
     }
 }

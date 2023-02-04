@@ -19,10 +19,12 @@ namespace Bubbles
             _scoreComponent = scoreComponent;
             _timerComponent = timerComponent;
             _gameOverComponent = gameOverComponent;
+            _countdownComponent = countdownComponent;
 
             _timeManager = SceneContext.Instance.TimeManager;
             _timeManager.RoundCountdown += OnTimeCountdown;
             _timeManager.RoundStarted += OnTimeStarted;
+            _timeManager.RoundEnded += OnTimeEnded;
 
             _scoreManager = SceneContext.Instance.ScoreManager;
 
@@ -68,18 +70,18 @@ namespace Bubbles
 
         public void Tick()
         {
-            switch (_timerManager.GameState)
+            switch (_timeManager.GameState)
             {
                 case GameState.Countdown:
-                    _countdownComponent.text = _timerManager.Countdown.ToString();
+                    _countdownComponent.text = _timeManager.Countdown.ToString();
                     break;
                 case GameState.Started:
                     _scoreComponent.text = $"Score: {_scoreManager.Score}";
-                    _timerComponet.text = $"Timer: {_timerManager.Timer}";
+                    _timerComponent.text = $"Timer: {_timeManager.Timer}";
                     break;
                 case GameState.Ended:
                     if (Input.anyKey)
-                        _timerManager.Start();
+                        _timeManager.Start();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

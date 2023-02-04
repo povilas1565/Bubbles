@@ -9,7 +9,8 @@ namespace Bubbles
         private int _count;
 
         public int Count => _count;
-        public IEnumerator<T> All => _pool;
+
+        public IEnumerable<T> All => _pool;
 
         public ObjectPool()
         {
@@ -37,13 +38,14 @@ namespace Bubbles
             }
 
             _count++;
+
             return obj;
         }
 
         public void Release(T obj)
         {
             obj.Disable();
-            obj.IsEnabled = true;
+            obj.IsEnabled = false;
             _queue.Enqueue(obj);
 
             _count--;

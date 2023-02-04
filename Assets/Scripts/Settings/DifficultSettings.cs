@@ -14,11 +14,17 @@ namespace Bubbles
         [SerializeField] private float maxRadius;
 
         public float MaxAmount => maxAmount;
+
         public float SpawnDelay => spawnDelay;
+
         public float MinSpeed => minSpeed;
+
         public float MaxSpeed => maxSpeed;
+
         public float FinalSpeedFactor => finalSpeedFactor;
+
         public float MinRadius => minRadius;
+
         public float MaxRadius => maxRadius;
     }
 }

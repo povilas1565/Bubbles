@@ -8,7 +8,7 @@ namespace Bubbles
         [SerializeField] private Text _scoreComponent;
         [SerializeField] private Text _timerComponent;
         [SerializeField] private Text _gameOverComponent;
-        [SerializeField] private Text _countdowmComponent;
+        [SerializeField] private Text _countdownComponent;
 
         private void Awake()
         {

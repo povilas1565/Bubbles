@@ -59,7 +59,7 @@ namespace Bubbles
         {
             _updateManager?.Remove(this);
         }
-        
+
         public bool IsEnabled { get; set; }
 
         public void Initialize()
